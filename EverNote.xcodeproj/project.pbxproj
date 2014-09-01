@@ -19,6 +19,26 @@
 		F15A0EC21985DEE8002EB3FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EAA1985DEE8002EB3FC /* UIKit.framework */; };
 		F15A0ECA1985DEE8002EB3FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F15A0EC81985DEE8002EB3FC /* InfoPlist.strings */; };
 		F15A0ECC1985DEE8002EB3FC /* EverNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0ECB1985DEE8002EB3FC /* EverNoteTests.m */; };
+		F15A0ED81985E004002EB3FC /* AGTSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0ED71985E004002EB3FC /* AGTSimpleCoreDataStack.m */; };
+		F15A0EDF1985EFE9002EB3FC /* ModelNotas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EDD1985EFE9002EB3FC /* ModelNotas.xcdatamodeld */; };
+		F15A0EF51986B58C002EB3FC /* _NamedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EEA1986B58B002EB3FC /* _NamedEntity.m */; };
+		F15A0EF61986B58C002EB3FC /* _Note.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EEC1986B58B002EB3FC /* _Note.m */; };
+		F15A0EF71986B58C002EB3FC /* _NoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EEE1986B58B002EB3FC /* _NoteBook.m */; };
+		F15A0EF81986B58C002EB3FC /* NamedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EF01986B58B002EB3FC /* NamedEntity.m */; };
+		F15A0EF91986B58C002EB3FC /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EF21986B58B002EB3FC /* Note.m */; };
+		F15A0EFA1986B58C002EB3FC /* NoteBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EF41986B58C002EB3FC /* NoteBook.m */; };
+		F15A0EFF1986BD74002EB3FC /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EFC1986BD74002EB3FC /* _Photo.m */; };
+		F15A0F001986BD74002EB3FC /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F15A0EFE1986BD74002EB3FC /* Photo.m */; };
+		F19CF16F1990404B00D3E725 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CF16E1990404B00D3E725 /* AGTCoreDataTableViewController.m */; };
+		F19CF174199040E600D3E725 /* NotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CF173199040E600D3E725 /* NotebooksViewController.m */; };
+		F19CF178199160B400D3E725 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CF177199160B400D3E725 /* UIViewController+Navigation.m */; };
+		F19CF17D1991639300D3E725 /* NotebookCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19CF17C1991639200D3E725 /* NotebookCellView.xib */; };
+		F19CF1801991667400D3E725 /* NotebookCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CF17F1991667400D3E725 /* NotebookCellView.m */; };
+		F1AD231D199EDF5C0049552C /* NotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD231C199EDF5C0049552C /* NotesTableViewController.m */; };
+		F1FE4B1419AE1EB9001179BA /* NoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FE4B1319AE1EB9001179BA /* NoteCollectionViewCell.xib */; };
+		F1FE4B1719AE207D001179BA /* NoteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FE4B1619AE207D001179BA /* NoteCollectionViewCell.m */; };
+		F1FE4B1B19AE233D001179BA /* AGTCoreDataCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FE4B1A19AE233D001179BA /* AGTCoreDataCollectionViewController.m */; };
+		F1FE4B1E19AE23AB001179BA /* NotesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FE4B1D19AE23AB001179BA /* NotesCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +68,44 @@
 		F15A0EC71985DEE8002EB3FC /* EverNoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EverNoteTests-Info.plist"; sourceTree = "<group>"; };
 		F15A0EC91985DEE8002EB3FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F15A0ECB1985DEE8002EB3FC /* EverNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverNoteTests.m; sourceTree = "<group>"; };
+		F15A0ED61985E004002EB3FC /* AGTSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTSimpleCoreDataStack.h; sourceTree = "<group>"; };
+		F15A0ED71985E004002EB3FC /* AGTSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTSimpleCoreDataStack.m; sourceTree = "<group>"; };
+		F15A0EDE1985EFE9002EB3FC /* ModelNotas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelNotas.xcdatamodel; sourceTree = "<group>"; };
+		F15A0EE91986B58B002EB3FC /* _NamedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _NamedEntity.h; path = Models/DataModels/_NamedEntity.h; sourceTree = "<group>"; };
+		F15A0EEA1986B58B002EB3FC /* _NamedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _NamedEntity.m; path = Models/DataModels/_NamedEntity.m; sourceTree = "<group>"; };
+		F15A0EEB1986B58B002EB3FC /* _Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Note.h; path = Models/DataModels/_Note.h; sourceTree = "<group>"; };
+		F15A0EEC1986B58B002EB3FC /* _Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Note.m; path = Models/DataModels/_Note.m; sourceTree = "<group>"; };
+		F15A0EED1986B58B002EB3FC /* _NoteBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _NoteBook.h; path = Models/DataModels/_NoteBook.h; sourceTree = "<group>"; };
+		F15A0EEE1986B58B002EB3FC /* _NoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _NoteBook.m; path = Models/DataModels/_NoteBook.m; sourceTree = "<group>"; };
+		F15A0EEF1986B58B002EB3FC /* NamedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NamedEntity.h; path = Models/DataModels/NamedEntity.h; sourceTree = "<group>"; };
+		F15A0EF01986B58B002EB3FC /* NamedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NamedEntity.m; path = Models/DataModels/NamedEntity.m; sourceTree = "<group>"; };
+		F15A0EF11986B58B002EB3FC /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Models/DataModels/Note.h; sourceTree = "<group>"; };
+		F15A0EF21986B58B002EB3FC /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = Models/DataModels/Note.m; sourceTree = "<group>"; };
+		F15A0EF31986B58B002EB3FC /* NoteBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteBook.h; path = Models/DataModels/NoteBook.h; sourceTree = "<group>"; };
+		F15A0EF41986B58C002EB3FC /* NoteBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteBook.m; path = Models/DataModels/NoteBook.m; sourceTree = "<group>"; };
+		F15A0EFB1986BD74002EB3FC /* _Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Photo.h; path = Models/DataModels/_Photo.h; sourceTree = "<group>"; };
+		F15A0EFC1986BD74002EB3FC /* _Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Photo.m; path = Models/DataModels/_Photo.m; sourceTree = "<group>"; };
+		F15A0EFD1986BD74002EB3FC /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Models/DataModels/Photo.h; sourceTree = "<group>"; };
+		F15A0EFE1986BD74002EB3FC /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = Models/DataModels/Photo.m; sourceTree = "<group>"; };
+		F19CF16C1989DBF200D3E725 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Settings.h; path = Controllers/Settings.h; sourceTree = "<group>"; };
+		F19CF16D1990404B00D3E725 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		F19CF16E1990404B00D3E725 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		F19CF172199040E600D3E725 /* NotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotebooksViewController.h; path = Controllers/Notebooks/NotebooksViewController.h; sourceTree = "<group>"; };
+		F19CF173199040E600D3E725 /* NotebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotebooksViewController.m; path = Controllers/Notebooks/NotebooksViewController.m; sourceTree = "<group>"; };
+		F19CF176199160B400D3E725 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Navigation.h"; path = "Categories/UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		F19CF177199160B400D3E725 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Navigation.m"; path = "Categories/UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		F19CF17C1991639200D3E725 /* NotebookCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NotebookCellView.xib; path = Views/NotebookView/Cell/NotebookCellView.xib; sourceTree = "<group>"; };
+		F19CF17E1991667300D3E725 /* NotebookCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotebookCellView.h; path = Views/NotebookView/Cell/NotebookCellView.h; sourceTree = "<group>"; };
+		F19CF17F1991667400D3E725 /* NotebookCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotebookCellView.m; path = Views/NotebookView/Cell/NotebookCellView.m; sourceTree = "<group>"; };
+		F1AD231B199EDF5C0049552C /* NotesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesTableViewController.h; path = Controllers/Notes/NotesTableViewController.h; sourceTree = "<group>"; };
+		F1AD231C199EDF5C0049552C /* NotesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesTableViewController.m; path = Controllers/Notes/NotesTableViewController.m; sourceTree = "<group>"; };
+		F1FE4B1319AE1EB9001179BA /* NoteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteCollectionViewCell.xib; path = Views/NoteView/Cell/NoteCollectionViewCell.xib; sourceTree = "<group>"; };
+		F1FE4B1519AE207D001179BA /* NoteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteCollectionViewCell.h; path = Views/NoteView/Cell/NoteCollectionViewCell.h; sourceTree = "<group>"; };
+		F1FE4B1619AE207D001179BA /* NoteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteCollectionViewCell.m; path = Views/NoteView/Cell/NoteCollectionViewCell.m; sourceTree = "<group>"; };
+		F1FE4B1919AE233D001179BA /* AGTCoreDataCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataCollectionViewController.h; sourceTree = "<group>"; };
+		F1FE4B1A19AE233D001179BA /* AGTCoreDataCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataCollectionViewController.m; sourceTree = "<group>"; };
+		F1FE4B1C19AE23AB001179BA /* NotesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesCollectionViewController.h; path = Controllers/Notes/NotesCollectionViewController.h; sourceTree = "<group>"; };
+		F1FE4B1D19AE23AB001179BA /* NotesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesCollectionViewController.m; path = Controllers/Notes/NotesCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +165,10 @@
 		F15A0EAC1985DEE8002EB3FC /* EverNote */ = {
 			isa = PBXGroup;
 			children = (
+				F19CF179199162FB00D3E725 /* Views */,
+				F19CF1751991607700D3E725 /* Categories */,
+				F19CF16B1989DBB400D3E725 /* Controllers */,
+				F15A0ED51985DF2E002EB3FC /* Models */,
 				F15A0EB51985DEE8002EB3FC /* AppDelegate.h */,
 				F15A0EB61985DEE8002EB3FC /* AppDelegate.m */,
 				F15A0EB81985DEE8002EB3FC /* Images.xcassets */,
@@ -142,6 +204,144 @@
 				F15A0EC81985DEE8002EB3FC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F15A0ED51985DF2E002EB3FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F15A0ED91985E4C6002EB3FC /* DataModels */,
+				F15A0ED61985E004002EB3FC /* AGTSimpleCoreDataStack.h */,
+				F15A0ED71985E004002EB3FC /* AGTSimpleCoreDataStack.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F15A0ED91985E4C6002EB3FC /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				F15A0EFB1986BD74002EB3FC /* _Photo.h */,
+				F15A0EFC1986BD74002EB3FC /* _Photo.m */,
+				F15A0EFD1986BD74002EB3FC /* Photo.h */,
+				F15A0EFE1986BD74002EB3FC /* Photo.m */,
+				F15A0EE91986B58B002EB3FC /* _NamedEntity.h */,
+				F15A0EEA1986B58B002EB3FC /* _NamedEntity.m */,
+				F15A0EEB1986B58B002EB3FC /* _Note.h */,
+				F15A0EEC1986B58B002EB3FC /* _Note.m */,
+				F15A0EED1986B58B002EB3FC /* _NoteBook.h */,
+				F15A0EEE1986B58B002EB3FC /* _NoteBook.m */,
+				F15A0EEF1986B58B002EB3FC /* NamedEntity.h */,
+				F15A0EF01986B58B002EB3FC /* NamedEntity.m */,
+				F15A0EF11986B58B002EB3FC /* Note.h */,
+				F15A0EF21986B58B002EB3FC /* Note.m */,
+				F15A0EF31986B58B002EB3FC /* NoteBook.h */,
+				F15A0EF41986B58C002EB3FC /* NoteBook.m */,
+				F15A0EDD1985EFE9002EB3FC /* ModelNotas.xcdatamodeld */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		F19CF16B1989DBB400D3E725 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1AD231A199EDEE90049552C /* Notes */,
+				F19CF1711990408C00D3E725 /* Notebooks */,
+				F19CF1701990407400D3E725 /* CoreDataTableViewController */,
+				F1FE4B1819AE231B001179BA /* CoreDataCollectionViewController */,
+				F19CF16C1989DBF200D3E725 /* Settings.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F19CF1701990407400D3E725 /* CoreDataTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F19CF16D1990404B00D3E725 /* AGTCoreDataTableViewController.h */,
+				F19CF16E1990404B00D3E725 /* AGTCoreDataTableViewController.m */,
+			);
+			name = CoreDataTableViewController;
+			sourceTree = "<group>";
+		};
+		F19CF1711990408C00D3E725 /* Notebooks */ = {
+			isa = PBXGroup;
+			children = (
+				F19CF172199040E600D3E725 /* NotebooksViewController.h */,
+				F19CF173199040E600D3E725 /* NotebooksViewController.m */,
+			);
+			name = Notebooks;
+			sourceTree = "<group>";
+		};
+		F19CF1751991607700D3E725 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F19CF176199160B400D3E725 /* UIViewController+Navigation.h */,
+				F19CF177199160B400D3E725 /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F19CF179199162FB00D3E725 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1FE4B1119AE1E68001179BA /* NoteView */,
+				F19CF17A1991630D00D3E725 /* NotebookView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F19CF17A1991630D00D3E725 /* NotebookView */ = {
+			isa = PBXGroup;
+			children = (
+				F19CF17B1991635F00D3E725 /* Cell */,
+			);
+			name = NotebookView;
+			sourceTree = "<group>";
+		};
+		F19CF17B1991635F00D3E725 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F19CF17C1991639200D3E725 /* NotebookCellView.xib */,
+				F19CF17E1991667300D3E725 /* NotebookCellView.h */,
+				F19CF17F1991667400D3E725 /* NotebookCellView.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F1AD231A199EDEE90049552C /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				F1AD231B199EDF5C0049552C /* NotesTableViewController.h */,
+				F1AD231C199EDF5C0049552C /* NotesTableViewController.m */,
+				F1FE4B1C19AE23AB001179BA /* NotesCollectionViewController.h */,
+				F1FE4B1D19AE23AB001179BA /* NotesCollectionViewController.m */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		F1FE4B1119AE1E68001179BA /* NoteView */ = {
+			isa = PBXGroup;
+			children = (
+				F1FE4B1219AE1E7F001179BA /* Cell */,
+			);
+			name = NoteView;
+			sourceTree = "<group>";
+		};
+		F1FE4B1219AE1E7F001179BA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F1FE4B1319AE1EB9001179BA /* NoteCollectionViewCell.xib */,
+				F1FE4B1519AE207D001179BA /* NoteCollectionViewCell.h */,
+				F1FE4B1619AE207D001179BA /* NoteCollectionViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F1FE4B1819AE231B001179BA /* CoreDataCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1FE4B1919AE233D001179BA /* AGTCoreDataCollectionViewController.h */,
+				F1FE4B1A19AE233D001179BA /* AGTCoreDataCollectionViewController.m */,
+			);
+			name = CoreDataCollectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +419,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FE4B1419AE1EB9001179BA /* NoteCollectionViewCell.xib in Resources */,
+				F19CF17D1991639300D3E725 /* NotebookCellView.xib in Resources */,
 				F15A0EB11985DEE8002EB3FC /* InfoPlist.strings in Resources */,
 				F15A0EB91985DEE8002EB3FC /* Images.xcassets in Resources */,
 			);
@@ -239,8 +441,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15A0F001986BD74002EB3FC /* Photo.m in Sources */,
+				F15A0EFF1986BD74002EB3FC /* _Photo.m in Sources */,
+				F15A0EFA1986B58C002EB3FC /* NoteBook.m in Sources */,
+				F15A0EF91986B58C002EB3FC /* Note.m in Sources */,
 				F15A0EB71985DEE8002EB3FC /* AppDelegate.m in Sources */,
+				F15A0EF71986B58C002EB3FC /* _NoteBook.m in Sources */,
+				F1FE4B1E19AE23AB001179BA /* NotesCollectionViewController.m in Sources */,
+				F19CF178199160B400D3E725 /* UIViewController+Navigation.m in Sources */,
+				F15A0EF81986B58C002EB3FC /* NamedEntity.m in Sources */,
+				F19CF174199040E600D3E725 /* NotebooksViewController.m in Sources */,
+				F19CF1801991667400D3E725 /* NotebookCellView.m in Sources */,
+				F15A0EDF1985EFE9002EB3FC /* ModelNotas.xcdatamodeld in Sources */,
+				F19CF16F1990404B00D3E725 /* AGTCoreDataTableViewController.m in Sources */,
+				F1FE4B1B19AE233D001179BA /* AGTCoreDataCollectionViewController.m in Sources */,
 				F15A0EB31985DEE8002EB3FC /* main.m in Sources */,
+				F15A0EF61986B58C002EB3FC /* _Note.m in Sources */,
+				F15A0EF51986B58C002EB3FC /* _NamedEntity.m in Sources */,
+				F15A0ED81985E004002EB3FC /* AGTSimpleCoreDataStack.m in Sources */,
+				F1FE4B1719AE207D001179BA /* NoteCollectionViewCell.m in Sources */,
+				F1AD231D199EDF5C0049552C /* NotesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +661,7 @@
 				F15A0ED11985DEE8002EB3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F15A0ED21985DEE8002EB3FC /* Build configuration list for PBXNativeTarget "EverNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -449,8 +670,23 @@
 				F15A0ED41985DEE8002EB3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F15A0EDD1985EFE9002EB3FC /* ModelNotas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F15A0EDE1985EFE9002EB3FC /* ModelNotas.xcdatamodel */,
+			);
+			currentVersion = F15A0EDE1985EFE9002EB3FC /* ModelNotas.xcdatamodel */;
+			name = ModelNotas.xcdatamodeld;
+			path = Models/DataModels/ModelNotas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F15A0E9B1985DEE7002EB3FC /* Project object */;
 }
