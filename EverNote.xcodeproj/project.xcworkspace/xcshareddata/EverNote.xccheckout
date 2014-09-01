@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>86570EC8-64B5-410F-9430-3E3CF40DAE13</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EverNote</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B3F9DF32-DA52-4C9F-B974-D92354128999</key>
+		<string>https://github.com/JaimeYesidLeonParada/Evernote.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EverNote.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B3F9DF32-DA52-4C9F-B974-D92354128999</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JaimeYesidLeonParada/Evernote.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B3F9DF32-DA52-4C9F-B974-D92354128999</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B3F9DF32-DA52-4C9F-B974-D92354128999</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Evernote</string>
+		</dict>
+	</array>
+</dict>
+</plist>

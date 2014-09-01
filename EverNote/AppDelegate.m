@@ -20,10 +20,10 @@
     //Crear instancia de stack CoreData
     self.model = [AGTSimpleCoreDataStack coreDataStackWithModelName:@"ModelNotas"];
     
-    [self trastearConDatos];
-    [self autosave];
+    //[self trastearConDatos];
+    //[self autosave];
     
-    [self predicateTest];
+    //[self predicateTest];
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -174,6 +174,7 @@
     NSLog(@"Results: \n %@", result);
 }
 
+/*
 - (void)samplePredicate{
     
     NSPredicate *test = [NSPredicate predicateWithFormat:@"surname == 'Dávalos'"];
@@ -191,7 +192,7 @@
     
     
 }
-
+*/
 
 
 

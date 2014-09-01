@@ -8,8 +8,10 @@
 
 #import "NotebooksViewController.h"
 #import "NoteBook.h"
+#import "Note.h"
 #import "NotebookCellView.h"
 #import "NotesTableViewController.h"
+#import "NotesCollectionViewController.h"
 
 @interface NotebooksViewController ()
 
@@ -90,7 +92,7 @@
     
     //Sincronizar libreta --> celda
     cell.nameView.text = nb.name;
-    cell.numberOfNotesView.text = [NSString stringWithFormat:@"%d", nb.notes.count];
+    cell.numberOfNotesView.text = [NSString stringWithFormat:@"%lu", (unsigned long)nb.notes.count];
     
     return cell;
 }
@@ -103,10 +105,41 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
     NoteBook *nb = [self.fetchedResultsController objectAtIndexPath:indexPath];
     NotesTableViewController *notesVC = [[NotesTableViewController alloc]initWithNotebook:nb];
     [self.navigationController pushViewController:notesVC
                                          animated:YES];
+     */
+    
+    
+   
+    //Crear  fetch request
+    
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[Note entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor
+                             sortDescriptorWithKey:NamedEntityAttributes.name
+                             ascending:YES],
+                            [NSSortDescriptor sortDescriptorWithKey:NamedEntityAttributes.modificationDate
+                                                          ascending:NO],
+                            [NSSortDescriptor sortDescriptorWithKey:NamedEntityAttributes.creationDate
+                                                          ascending:NO]];
+    
+     
+     // Crear fetch result controller
+    NSFetchedResultsController *fC = [[NSFetchedResultsController alloc]initWithFetchRequest:req managedObjectContext:self.fetchedResultsController.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    
+    
+    //Layout
+    
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    layout.itemSize = CGSizeMake(120, 150);
+    
+    // Creamos el control de notas
+    NotesCollectionViewController *notesVC = [NotesCollectionViewController coreDataCollectionViewControllerWithFetchedResultsController:fC layout:layout];
+    
+    [self.navigationController pushViewController:notesVC animated:YES];
+     
 }
 
 
