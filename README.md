@@ -1,0 +1,4 @@
+Evernote
+========
+
+Project test CoreData
