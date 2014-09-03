@@ -7,10 +7,12 @@
 //
 
 #import "AGTCoreDataCollectionViewController.h"
+#import "DetailViewController.h"
 
 @interface AGTCoreDataCollectionViewController ()<NSFetchedResultsControllerDelegate>
 @property (strong, nonatomic) NSMutableArray *objectChanges;
 @property (strong, nonatomic) NSMutableArray *sectionChanges;
+
 
 @end
 
@@ -248,6 +250,26 @@
     if (![self.fetchedResultsController performFetch:&err]) {
         NSLog(@"Error while fetching data!\n%@", err);
     }
-    
 }
+
+
+#pragma mark - Delegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSAssert(self.detailViewControllerClassName, @"You must set a detailViewController class name!");
+    
+    id detailModel = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    UIViewController<DetailViewController> *detailVC = [[NSClassFromString(self.detailViewControllerClassName) alloc] initWithModel:detailModel];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
+
+
+
+
+
+
+
+
 @end

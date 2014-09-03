@@ -155,6 +155,7 @@
 }
 
 #pragma mark -Predicate Playground
+/*
 - (void)predicateTest
 {
     NSPredicate *novias = [NSPredicate predicateWithFormat:@"notebook.name ==[cd] 'Ex-novias para el recuerdo'"];
@@ -187,7 +188,7 @@
     NSLog(@"Results: \n %@", result);
 }
 
-/*
+
 - (void)samplePredicate{
     
     NSPredicate *test = [NSPredicate predicateWithFormat:@"surname == 'Dávalos'"];

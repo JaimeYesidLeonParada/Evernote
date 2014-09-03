@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053551D719B7ABDD00CA476F /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053551D519B7ABDD00CA476F /* NoteViewController.m */; };
+		053551D819B7ABDD00CA476F /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053551D619B7ABDD00CA476F /* NoteViewController.xib */; };
+		053551DA19B7AE4F00CA476F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053551D919B7AE4F00CA476F /* MapKit.framework */; };
 		0536EF0A19B6292600539CAF /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0536EF0919B6292600539CAF /* noImage.png */; };
 		F15A0EA71985DEE8002EB3FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA61985DEE8002EB3FC /* Foundation.framework */; };
 		F15A0EA91985DEE8002EB3FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA81985DEE8002EB3FC /* CoreGraphics.framework */; };
@@ -53,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053551D419B7ABDD00CA476F /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = Controllers/Note/NoteViewController.h; sourceTree = "<group>"; };
+		053551D519B7ABDD00CA476F /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = Controllers/Note/NoteViewController.m; sourceTree = "<group>"; };
+		053551D619B7ABDD00CA476F /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteViewController.xib; path = Controllers/Note/NoteViewController.xib; sourceTree = "<group>"; };
+		053551D919B7AE4F00CA476F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		053551DC19B7B4DB00CA476F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Protocols/DetailViewController.h; sourceTree = "<group>"; };
 		0536EF0919B6292600539CAF /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 		F15A0EA31985DEE8002EB3FC /* EverNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A0EA61985DEE8002EB3FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053551DA19B7AE4F00CA476F /* MapKit.framework in Frameworks */,
 				F15A0EA91985DEE8002EB3FC /* CoreGraphics.framework in Frameworks */,
 				F15A0EAB1985DEE8002EB3FC /* UIKit.framework in Frameworks */,
 				F15A0EA71985DEE8002EB3FC /* Foundation.framework in Frameworks */,
@@ -134,6 +143,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053551D319B7AB9F00CA476F /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				053551D419B7ABDD00CA476F /* NoteViewController.h */,
+				053551D519B7ABDD00CA476F /* NoteViewController.m */,
+				053551D619B7ABDD00CA476F /* NoteViewController.xib */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		053551DB19B7B4AC00CA476F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				053551DC19B7B4DB00CA476F /* DetailViewController.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		0536EF0719B628EA00539CAF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +199,7 @@
 		F15A0EA51985DEE8002EB3FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				053551D919B7AE4F00CA476F /* MapKit.framework */,
 				F15A0EA61985DEE8002EB3FC /* Foundation.framework */,
 				F15A0EA81985DEE8002EB3FC /* CoreGraphics.framework */,
 				F15A0EAA1985DEE8002EB3FC /* UIKit.framework */,
@@ -183,6 +211,7 @@
 		F15A0EAC1985DEE8002EB3FC /* EverNote */ = {
 			isa = PBXGroup;
 			children = (
+				053551DB19B7B4AC00CA476F /* Protocols */,
 				0536EF0719B628EA00539CAF /* Resources */,
 				F19CF179199162FB00D3E725 /* Views */,
 				F19CF1751991607700D3E725 /* Categories */,
@@ -262,6 +291,7 @@
 		F19CF16B1989DBB400D3E725 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				053551D319B7AB9F00CA476F /* Note */,
 				F1AD231A199EDEE90049552C /* Notes */,
 				F19CF1711990408C00D3E725 /* Notebooks */,
 				F19CF1701990407400D3E725 /* CoreDataTableViewController */,
@@ -442,6 +472,7 @@
 				F19CF17D1991639300D3E725 /* NotebookCellView.xib in Resources */,
 				0536EF0A19B6292600539CAF /* noImage.png in Resources */,
 				F15A0EB11985DEE8002EB3FC /* InfoPlist.strings in Resources */,
+				053551D819B7ABDD00CA476F /* NoteViewController.xib in Resources */,
 				F15A0EB91985DEE8002EB3FC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +499,7 @@
 				F15A0EB71985DEE8002EB3FC /* AppDelegate.m in Sources */,
 				F15A0EF71986B58C002EB3FC /* _NoteBook.m in Sources */,
 				F1FE4B1E19AE23AB001179BA /* NotesCollectionViewController.m in Sources */,
+				053551D719B7ABDD00CA476F /* NoteViewController.m in Sources */,
 				F19CF178199160B400D3E725 /* UIViewController+Navigation.m in Sources */,
 				F15A0EF81986B58C002EB3FC /* NamedEntity.m in Sources */,
 				F19CF174199040E600D3E725 /* NotebooksViewController.m in Sources */,

@@ -8,8 +8,10 @@
 
 #import "NotesCollectionViewController.h"
 #import "NoteCollectionViewCell.h"
+#import "NoteViewController.h"
 #import "Note.h"
 #import "Photo.h"
+
 
 static NSString *cellId = @"NoteCellId";
 
@@ -25,6 +27,7 @@ static NSString *cellId = @"NoteCellId";
     [super viewWillAppear:animated];
     [self registerNib];
     
+    self.detailViewControllerClassName = NSStringFromClass([NoteViewController class]);
     self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     self.title = @"Notas";
 }
@@ -45,26 +48,26 @@ static NSString *cellId = @"NoteCellId";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //OBtener el objeto
     Note *note = [self.fetchedResultsController objectAtIndexPath:indexPath];
    
-    //Obtener una celda
     NoteCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     
     [cell observeNote:note];
-    /*
-    //Configurar la celda
-    cell.titleView.text = note.name;
-    cell.photoView.image = note.photo.image;
-    
-    NSDateFormatter *fmt = [NSDateFormatter new];
-    fmt.dateStyle = NSDateFormatterMediumStyle;
-    
-    cell.modificationDateView.text = [fmt stringFromDate:note.modificationDate];
-    */
-    //Devolver la celda
-    
+        
     return cell;
 }
+
+/*
+#pragma mark - Delegates
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    Note *note = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    NoteViewController *nVC = [[NoteViewController alloc]initWithModel:note];
+    
+    [self.navigationController pushViewController:nVC
+                                         animated:YES];
+}
+*/
 
 @end
