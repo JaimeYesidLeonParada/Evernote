@@ -25,7 +25,8 @@ static NSString *cellId = @"NoteCellId";
     [super viewWillAppear:animated];
     [self registerNib];
     
-    self.collectionView.backgroundColor = [UIColor redColor];
+    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+    self.title = @"Notas";
 }
 
 
@@ -50,6 +51,8 @@ static NSString *cellId = @"NoteCellId";
     //Obtener una celda
     NoteCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     
+    [cell observeNote:note];
+    /*
     //Configurar la celda
     cell.titleView.text = note.name;
     cell.photoView.image = note.photo.image;
@@ -58,7 +61,7 @@ static NSString *cellId = @"NoteCellId";
     fmt.dateStyle = NSDateFormatterMediumStyle;
     
     cell.modificationDateView.text = [fmt stringFromDate:note.modificationDate];
-    
+    */
     //Devolver la celda
     
     return cell;

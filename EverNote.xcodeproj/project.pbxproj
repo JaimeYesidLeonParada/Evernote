@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0536EF0A19B6292600539CAF /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0536EF0919B6292600539CAF /* noImage.png */; };
 		F15A0EA71985DEE8002EB3FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA61985DEE8002EB3FC /* Foundation.framework */; };
 		F15A0EA91985DEE8002EB3FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA81985DEE8002EB3FC /* CoreGraphics.framework */; };
 		F15A0EAB1985DEE8002EB3FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EAA1985DEE8002EB3FC /* UIKit.framework */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0536EF0919B6292600539CAF /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 		F15A0EA31985DEE8002EB3FC /* EverNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A0EA61985DEE8002EB3FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F15A0EA81985DEE8002EB3FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +134,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0536EF0719B628EA00539CAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0536EF0819B628F600539CAF /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0536EF0819B628F600539CAF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0536EF0919B6292600539CAF /* noImage.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		F15A0E9A1985DEE7002EB3FC = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +183,7 @@
 		F15A0EAC1985DEE8002EB3FC /* EverNote */ = {
 			isa = PBXGroup;
 			children = (
+				0536EF0719B628EA00539CAF /* Resources */,
 				F19CF179199162FB00D3E725 /* Views */,
 				F19CF1751991607700D3E725 /* Categories */,
 				F19CF16B1989DBB400D3E725 /* Controllers */,
@@ -421,6 +440,7 @@
 			files = (
 				F1FE4B1419AE1EB9001179BA /* NoteCollectionViewCell.xib in Resources */,
 				F19CF17D1991639300D3E725 /* NotebookCellView.xib in Resources */,
+				0536EF0A19B6292600539CAF /* noImage.png in Resources */,
 				F15A0EB11985DEE8002EB3FC /* InfoPlist.strings in Resources */,
 				F15A0EB91985DEE8002EB3FC /* Images.xcassets in Resources */,
 			);

@@ -20,7 +20,7 @@
     //Crear instancia de stack CoreData
     self.model = [AGTSimpleCoreDataStack coreDataStackWithModelName:@"ModelNotas"];
     
-    //[self trastearConDatos];
+    [self trastearConDatos];
     //[self autosave];
     
     //[self predicateTest];
@@ -94,6 +94,19 @@
      [Note noteWithName:@"Pampita"
               notebook:novias
                context:self.model.context];
+    
+    NoteBook *modelos = [NoteBook notebookWithName:@"Modelos"
+                                          context:self.model.context];
+    
+    [Note noteWithName:@"Natalia Paris"
+              notebook:modelos
+               context:self.model.context];
+    
+    [Note noteWithName:@"Tatiana de los Rios"
+              notebook:modelos
+               context:self.model.context];
+    
+    
     
     /*
     

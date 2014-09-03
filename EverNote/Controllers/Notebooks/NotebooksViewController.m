@@ -125,7 +125,9 @@
                             [NSSortDescriptor sortDescriptorWithKey:NamedEntityAttributes.creationDate
                                                           ascending:NO]];
     
-     
+    req.predicate = [NSPredicate predicateWithFormat:@"notebook == %@",
+                     [self.fetchedResultsController objectAtIndexPath:indexPath]];
+    
      // Crear fetch result controller
     NSFetchedResultsController *fC = [[NSFetchedResultsController alloc]initWithFetchRequest:req managedObjectContext:self.fetchedResultsController.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     
@@ -133,7 +135,11 @@
     //Layout
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-    layout.itemSize = CGSizeMake(120, 150);
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.itemSize = CGSizeMake(140, 150);
+    layout.minimumLineSpacing = 10;
+    layout.minimumInteritemSpacing = 10;
+    layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     
     // Creamos el control de notas
     NotesCollectionViewController *notesVC = [NotesCollectionViewController coreDataCollectionViewControllerWithFetchedResultsController:fC layout:layout];

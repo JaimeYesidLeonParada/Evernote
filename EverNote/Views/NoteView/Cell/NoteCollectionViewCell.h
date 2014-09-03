@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class Note;
+
 @interface NoteCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 @property (weak, nonatomic) IBOutlet UILabel *modificationDateView;
 @property (weak, nonatomic) IBOutlet UILabel *titleView;
 
+- (void)observeNote:(Note*)note;
 
 @end
