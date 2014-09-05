@@ -143,7 +143,7 @@
     
     // Creamos el control de notas
     NotesCollectionViewController *notesVC = [NotesCollectionViewController coreDataCollectionViewControllerWithFetchedResultsController:fC layout:layout];
-    
+    notesVC.notebook = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [self.navigationController pushViewController:notesVC animated:YES];
      
 }

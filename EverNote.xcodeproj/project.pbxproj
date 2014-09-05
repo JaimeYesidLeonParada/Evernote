@@ -10,6 +10,8 @@
 		053551D719B7ABDD00CA476F /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053551D519B7ABDD00CA476F /* NoteViewController.m */; };
 		053551D819B7ABDD00CA476F /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053551D619B7ABDD00CA476F /* NoteViewController.xib */; };
 		053551DA19B7AE4F00CA476F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053551D919B7AE4F00CA476F /* MapKit.framework */; };
+		053551E119B8F6A000CA476F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053551DF19B8F6A000CA476F /* PhotoViewController.m */; };
+		053551E219B8F6A000CA476F /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053551E019B8F6A000CA476F /* PhotoViewController.xib */; };
 		0536EF0A19B6292600539CAF /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0536EF0919B6292600539CAF /* noImage.png */; };
 		F15A0EA71985DEE8002EB3FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA61985DEE8002EB3FC /* Foundation.framework */; };
 		F15A0EA91985DEE8002EB3FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA81985DEE8002EB3FC /* CoreGraphics.framework */; };
@@ -61,6 +63,9 @@
 		053551D619B7ABDD00CA476F /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteViewController.xib; path = Controllers/Note/NoteViewController.xib; sourceTree = "<group>"; };
 		053551D919B7AE4F00CA476F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		053551DC19B7B4DB00CA476F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Protocols/DetailViewController.h; sourceTree = "<group>"; };
+		053551DE19B8F6A000CA476F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoViewController.h; path = Photo/PhotoViewController.h; sourceTree = "<group>"; };
+		053551DF19B8F6A000CA476F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoViewController.m; path = Photo/PhotoViewController.m; sourceTree = "<group>"; };
+		053551E019B8F6A000CA476F /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoViewController.xib; path = Photo/PhotoViewController.xib; sourceTree = "<group>"; };
 		0536EF0919B6292600539CAF /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 		F15A0EA31985DEE8002EB3FC /* EverNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A0EA61985DEE8002EB3FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +164,16 @@
 				053551DC19B7B4DB00CA476F /* DetailViewController.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		053551DD19B8F64200CA476F /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				053551DE19B8F6A000CA476F /* PhotoViewController.h */,
+				053551DF19B8F6A000CA476F /* PhotoViewController.m */,
+				053551E019B8F6A000CA476F /* PhotoViewController.xib */,
+			);
+			name = Photo;
 			sourceTree = "<group>";
 		};
 		0536EF0719B628EA00539CAF /* Resources */ = {
@@ -291,6 +306,7 @@
 		F19CF16B1989DBB400D3E725 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				053551DD19B8F64200CA476F /* Photo */,
 				053551D319B7AB9F00CA476F /* Note */,
 				F1AD231A199EDEE90049552C /* Notes */,
 				F19CF1711990408C00D3E725 /* Notebooks */,
@@ -470,6 +486,7 @@
 			files = (
 				F1FE4B1419AE1EB9001179BA /* NoteCollectionViewCell.xib in Resources */,
 				F19CF17D1991639300D3E725 /* NotebookCellView.xib in Resources */,
+				053551E219B8F6A000CA476F /* PhotoViewController.xib in Resources */,
 				0536EF0A19B6292600539CAF /* noImage.png in Resources */,
 				F15A0EB11985DEE8002EB3FC /* InfoPlist.strings in Resources */,
 				053551D819B7ABDD00CA476F /* NoteViewController.xib in Resources */,
@@ -501,6 +518,7 @@
 				F1FE4B1E19AE23AB001179BA /* NotesCollectionViewController.m in Sources */,
 				053551D719B7ABDD00CA476F /* NoteViewController.m in Sources */,
 				F19CF178199160B400D3E725 /* UIViewController+Navigation.m in Sources */,
+				053551E119B8F6A000CA476F /* PhotoViewController.m in Sources */,
 				F15A0EF81986B58C002EB3FC /* NamedEntity.m in Sources */,
 				F19CF174199040E600D3E725 /* NotebooksViewController.m in Sources */,
 				F19CF1801991667400D3E725 /* NotebookCellView.m in Sources */,

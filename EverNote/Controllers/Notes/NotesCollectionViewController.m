@@ -10,6 +10,7 @@
 #import "NoteCollectionViewCell.h"
 #import "NoteViewController.h"
 #import "Note.h"
+#import "NoteBook.h"
 #import "Photo.h"
 
 
@@ -30,6 +31,11 @@ static NSString *cellId = @"NoteCellId";
     self.detailViewControllerClassName = NSStringFromClass([NoteViewController class]);
     self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     self.title = @"Notas";
+    
+    UIBarButtonItem *add = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                         target:self
+                                                                         action:@selector(addNewNote:)];
+    self.navigationItem.rightBarButtonItem = add;
 }
 
 
@@ -69,5 +75,12 @@ static NSString *cellId = @"NoteCellId";
                                          animated:YES];
 }
 */
+
+#pragma mark - Actions
+-(void)addNewNote:(id)sender
+{
+    NoteViewController *newNoteVC = [[NoteViewController alloc]initForNewNoteInNotebook:self.notebook];
+    [self.navigationController pushViewController:newNoteVC animated:YES];
+}
 
 @end

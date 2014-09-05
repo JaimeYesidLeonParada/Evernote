@@ -8,6 +8,10 @@
 
 #import "AGTCoreDataCollectionViewController.h"
 
+@class NoteBook;
+
 @interface NotesCollectionViewController : AGTCoreDataCollectionViewController
+
+@property (nonatomic, strong) NoteBook *notebook;
 
 @end
