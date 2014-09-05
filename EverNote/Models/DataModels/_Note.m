@@ -8,6 +8,7 @@ const struct NoteAttributes NoteAttributes = {
 };
 
 const struct NoteRelationships NoteRelationships = {
+	.location = @"location",
 	.notebook = @"notebook",
 	.photo = @"photo",
 };
@@ -54,6 +55,10 @@ const struct NoteFetchedProperties NoteFetchedProperties = {
 
 
 
+
+@dynamic location;
+
+	
 
 @dynamic notebook;
 

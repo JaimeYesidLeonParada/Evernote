@@ -9,6 +9,7 @@ extern const struct NoteAttributes {
 } NoteAttributes;
 
 extern const struct NoteRelationships {
+	__unsafe_unretained NSString *location;
 	__unsafe_unretained NSString *notebook;
 	__unsafe_unretained NSString *photo;
 } NoteRelationships;
@@ -16,6 +17,7 @@ extern const struct NoteRelationships {
 extern const struct NoteFetchedProperties {
 } NoteFetchedProperties;
 
+@class Location;
 @class NoteBook;
 @class Photo;
 
@@ -40,6 +42,13 @@ extern const struct NoteFetchedProperties {
 
 //- (BOOL)validateText:(id*)value_ error:(NSError**)error_;
 
+
+
+
+
+@property (nonatomic, strong) Location *location;
+
+//- (BOOL)validateLocation:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -72,6 +81,11 @@ extern const struct NoteFetchedProperties {
 - (void)setPrimitiveText:(NSString*)value;
 
 
+
+
+
+- (Location*)primitiveLocation;
+- (void)setPrimitiveLocation:(Location*)value;
 
 
 

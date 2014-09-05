@@ -70,6 +70,13 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self
                                                                          action:@selector(displayDetailPhoto:)];
     [self.photoView addGestureRecognizer:tap];
+    
+    
+    UIBarButtonItem *share = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                          target:self
+                                                                          action:@selector(displayShareController:)];
+    self.navigationItem.rightBarButtonItem = share;
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -195,6 +202,34 @@
     PhotoViewController *pVC = [[PhotoViewController alloc]initWithModel:self.model.photo];
     [self.navigationController pushViewController:pVC
                                          animated:YES];
+}
+
+- (void)displayShareController:(id)sender
+{
+    UIActivityViewController *aVC = [[UIActivityViewController alloc]initWithActivityItems:[self arrayOfItems] applicationActivities:nil];
+    [self presentViewController:aVC
+                       animated:YES
+                     completion:nil];
+}
+
+#pragma mark - Utils
+-(NSArray*)arrayOfItems
+{
+    NSMutableArray *items = [NSMutableArray array];
+    
+    if (self.model.name) {
+        [items addObject:self.model.name];
+    }
+    
+    if (self.model.text) {
+        [items addObject:self.model.text];
+    }
+    
+    if (self.model.photo.image) {
+        [items addObject:self.model.photo.image];
+    }
+    
+    return items;
 }
 
 #pragma mark - UITextFieldDelegate
