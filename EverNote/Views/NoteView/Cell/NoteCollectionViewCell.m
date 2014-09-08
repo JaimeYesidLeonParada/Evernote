@@ -22,7 +22,7 @@
 #pragma mark - Class Methods
 +(NSArray*)keyToObserver
 {
-    return @[@"title", @"modificationDate", @"photo.image"];
+    return @[@"photo.image",@"name", @"modificationDate", @"location", @"location.latitude", @"location.longitude", @"location.address"];
 }
 
 
@@ -48,6 +48,7 @@
     self.titleView.text = self.note.name;
     self.modificationDateView.text = [fmt stringFromDate:self.note.modificationDate];
     self.photoView.image = (self.note.photo.image == nil? [UIImage imageNamed:@"noImage.png"] : self.note.photo.image);
+    self.locationView.image = (self.note.hasLocation? [UIImage imageNamed:@"placemark.png"]:nil);
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
