@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		051532CD19BF5B1F0055A056 /* _MapSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 051532CA19BF5B1F0055A056 /* _MapSnapshot.m */; };
+		051532CE19BF5B1F0055A056 /* MapSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 051532CC19BF5B1F0055A056 /* MapSnapshot.m */; };
+		051532D019BF67280055A056 /* noSnapshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 051532CF19BF67280055A056 /* noSnapshot.png */; };
+		051532D519BF913C0055A056 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 051532D319BF913C0055A056 /* LocationViewController.m */; };
+		051532D619BF913C0055A056 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 051532D419BF913C0055A056 /* LocationViewController.xib */; };
+		051532DD19BFB0370055A056 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 051532D819BFB0370055A056 /* UIImage+Alpha.m */; };
+		051532DE19BFB0370055A056 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 051532DA19BFB0370055A056 /* UIImage+Resize.m */; };
+		051532DF19BFB0370055A056 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 051532DC19BFB0370055A056 /* UIImage+RoundedCorner.m */; };
 		053551D719B7ABDD00CA476F /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053551D519B7ABDD00CA476F /* NoteViewController.m */; };
 		053551D819B7ABDD00CA476F /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053551D619B7ABDD00CA476F /* NoteViewController.xib */; };
 		053551DA19B7AE4F00CA476F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053551D919B7AE4F00CA476F /* MapKit.framework */; };
 		053551E119B8F6A000CA476F /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053551DF19B8F6A000CA476F /* PhotoViewController.m */; };
 		053551E219B8F6A000CA476F /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053551E019B8F6A000CA476F /* PhotoViewController.xib */; };
+		053551E719BA5A8400CA476F /* _Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 053551E419BA5A8400CA476F /* _Location.m */; };
+		053551E819BA5A8400CA476F /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 053551E619BA5A8400CA476F /* Location.m */; };
+		053551EA19BE162F00CA476F /* placemark.png in Resources */ = {isa = PBXBuildFile; fileRef = 053551E919BE162F00CA476F /* placemark.png */; };
 		0536EF0A19B6292600539CAF /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0536EF0919B6292600539CAF /* noImage.png */; };
 		F15A0EA71985DEE8002EB3FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA61985DEE8002EB3FC /* Foundation.framework */; };
 		F15A0EA91985DEE8002EB3FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15A0EA81985DEE8002EB3FC /* CoreGraphics.framework */; };
@@ -58,6 +69,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051532C919BF5B1F0055A056 /* _MapSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _MapSnapshot.h; path = Models/DataModels/_MapSnapshot.h; sourceTree = "<group>"; };
+		051532CA19BF5B1F0055A056 /* _MapSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MapSnapshot.m; path = Models/DataModels/_MapSnapshot.m; sourceTree = "<group>"; };
+		051532CB19BF5B1F0055A056 /* MapSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapSnapshot.h; path = Models/DataModels/MapSnapshot.h; sourceTree = "<group>"; };
+		051532CC19BF5B1F0055A056 /* MapSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapSnapshot.m; path = Models/DataModels/MapSnapshot.m; sourceTree = "<group>"; };
+		051532CF19BF67280055A056 /* noSnapshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noSnapshot.png; sourceTree = "<group>"; };
+		051532D219BF913C0055A056 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationViewController.h; path = Location/LocationViewController.h; sourceTree = "<group>"; };
+		051532D319BF913C0055A056 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationViewController.m; path = Location/LocationViewController.m; sourceTree = "<group>"; };
+		051532D419BF913C0055A056 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationViewController.xib; path = Location/LocationViewController.xib; sourceTree = "<group>"; };
+		051532D719BFB0370055A056 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		051532D819BFB0370055A056 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		051532D919BFB0370055A056 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		051532DA19BFB0370055A056 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		051532DB19BFB0370055A056 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		051532DC19BFB0370055A056 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		053551D419B7ABDD00CA476F /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = Controllers/Note/NoteViewController.h; sourceTree = "<group>"; };
 		053551D519B7ABDD00CA476F /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = Controllers/Note/NoteViewController.m; sourceTree = "<group>"; };
 		053551D619B7ABDD00CA476F /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteViewController.xib; path = Controllers/Note/NoteViewController.xib; sourceTree = "<group>"; };
@@ -66,6 +91,12 @@
 		053551DE19B8F6A000CA476F /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoViewController.h; path = Photo/PhotoViewController.h; sourceTree = "<group>"; };
 		053551DF19B8F6A000CA476F /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoViewController.m; path = Photo/PhotoViewController.m; sourceTree = "<group>"; };
 		053551E019B8F6A000CA476F /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoViewController.xib; path = Photo/PhotoViewController.xib; sourceTree = "<group>"; };
+		053551E319BA5A8400CA476F /* _Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Location.h; path = Models/DataModels/_Location.h; sourceTree = "<group>"; };
+		053551E419BA5A8400CA476F /* _Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Location.m; path = Models/DataModels/_Location.m; sourceTree = "<group>"; };
+		053551E519BA5A8400CA476F /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Models/DataModels/Location.h; sourceTree = "<group>"; };
+		053551E619BA5A8400CA476F /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = Models/DataModels/Location.m; sourceTree = "<group>"; };
+		053551E919BE162F00CA476F /* placemark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placemark.png; sourceTree = "<group>"; };
+		0535523919BF535900CA476F /* ModelNotas2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelNotas2.xcdatamodel; sourceTree = "<group>"; };
 		0536EF0919B6292600539CAF /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 		F15A0EA31985DEE8002EB3FC /* EverNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15A0EA61985DEE8002EB3FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,6 +179,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051532D119BF910F0055A056 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				051532D219BF913C0055A056 /* LocationViewController.h */,
+				051532D319BF913C0055A056 /* LocationViewController.m */,
+				051532D419BF913C0055A056 /* LocationViewController.xib */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		053551D319B7AB9F00CA476F /* Note */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +228,8 @@
 		0536EF0819B628F600539CAF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				051532CF19BF67280055A056 /* noSnapshot.png */,
+				053551E919BE162F00CA476F /* placemark.png */,
 				0536EF0919B6292600539CAF /* noImage.png */,
 			);
 			name = Images;
@@ -282,6 +325,14 @@
 		F15A0ED91985E4C6002EB3FC /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				051532C919BF5B1F0055A056 /* _MapSnapshot.h */,
+				051532CA19BF5B1F0055A056 /* _MapSnapshot.m */,
+				051532CB19BF5B1F0055A056 /* MapSnapshot.h */,
+				051532CC19BF5B1F0055A056 /* MapSnapshot.m */,
+				053551E319BA5A8400CA476F /* _Location.h */,
+				053551E419BA5A8400CA476F /* _Location.m */,
+				053551E519BA5A8400CA476F /* Location.h */,
+				053551E619BA5A8400CA476F /* Location.m */,
 				F15A0EFB1986BD74002EB3FC /* _Photo.h */,
 				F15A0EFC1986BD74002EB3FC /* _Photo.m */,
 				F15A0EFD1986BD74002EB3FC /* Photo.h */,
@@ -306,6 +357,7 @@
 		F19CF16B1989DBB400D3E725 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				051532D119BF910F0055A056 /* Location */,
 				053551DD19B8F64200CA476F /* Photo */,
 				053551D319B7AB9F00CA476F /* Note */,
 				F1AD231A199EDEE90049552C /* Notes */,
@@ -338,6 +390,12 @@
 		F19CF1751991607700D3E725 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				051532D719BFB0370055A056 /* UIImage+Alpha.h */,
+				051532D819BFB0370055A056 /* UIImage+Alpha.m */,
+				051532D919BFB0370055A056 /* UIImage+Resize.h */,
+				051532DA19BFB0370055A056 /* UIImage+Resize.m */,
+				051532DB19BFB0370055A056 /* UIImage+RoundedCorner.h */,
+				051532DC19BFB0370055A056 /* UIImage+RoundedCorner.m */,
 				F19CF176199160B400D3E725 /* UIViewController+Navigation.h */,
 				F19CF177199160B400D3E725 /* UIViewController+Navigation.m */,
 			);
@@ -484,8 +542,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053551EA19BE162F00CA476F /* placemark.png in Resources */,
 				F1FE4B1419AE1EB9001179BA /* NoteCollectionViewCell.xib in Resources */,
 				F19CF17D1991639300D3E725 /* NotebookCellView.xib in Resources */,
+				051532D619BF913C0055A056 /* LocationViewController.xib in Resources */,
+				051532D019BF67280055A056 /* noSnapshot.png in Resources */,
 				053551E219B8F6A000CA476F /* PhotoViewController.xib in Resources */,
 				0536EF0A19B6292600539CAF /* noImage.png in Resources */,
 				F15A0EB11985DEE8002EB3FC /* InfoPlist.strings in Resources */,
@@ -509,8 +570,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051532DE19BFB0370055A056 /* UIImage+Resize.m in Sources */,
 				F15A0F001986BD74002EB3FC /* Photo.m in Sources */,
+				051532D519BF913C0055A056 /* LocationViewController.m in Sources */,
+				051532CD19BF5B1F0055A056 /* _MapSnapshot.m in Sources */,
 				F15A0EFF1986BD74002EB3FC /* _Photo.m in Sources */,
+				051532DD19BFB0370055A056 /* UIImage+Alpha.m in Sources */,
 				F15A0EFA1986B58C002EB3FC /* NoteBook.m in Sources */,
 				F15A0EF91986B58C002EB3FC /* Note.m in Sources */,
 				F15A0EB71985DEE8002EB3FC /* AppDelegate.m in Sources */,
@@ -521,15 +586,19 @@
 				053551E119B8F6A000CA476F /* PhotoViewController.m in Sources */,
 				F15A0EF81986B58C002EB3FC /* NamedEntity.m in Sources */,
 				F19CF174199040E600D3E725 /* NotebooksViewController.m in Sources */,
+				051532DF19BFB0370055A056 /* UIImage+RoundedCorner.m in Sources */,
 				F19CF1801991667400D3E725 /* NotebookCellView.m in Sources */,
+				053551E719BA5A8400CA476F /* _Location.m in Sources */,
 				F15A0EDF1985EFE9002EB3FC /* ModelNotas.xcdatamodeld in Sources */,
 				F19CF16F1990404B00D3E725 /* AGTCoreDataTableViewController.m in Sources */,
 				F1FE4B1B19AE233D001179BA /* AGTCoreDataCollectionViewController.m in Sources */,
+				051532CE19BF5B1F0055A056 /* MapSnapshot.m in Sources */,
 				F15A0EB31985DEE8002EB3FC /* main.m in Sources */,
 				F15A0EF61986B58C002EB3FC /* _Note.m in Sources */,
 				F15A0EF51986B58C002EB3FC /* _NamedEntity.m in Sources */,
 				F15A0ED81985E004002EB3FC /* AGTSimpleCoreDataStack.m in Sources */,
 				F1FE4B1719AE207D001179BA /* NoteCollectionViewCell.m in Sources */,
+				053551E819BA5A8400CA476F /* Location.m in Sources */,
 				F1AD231D199EDF5C0049552C /* NotesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,9 +813,10 @@
 		F15A0EDD1985EFE9002EB3FC /* ModelNotas.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				0535523919BF535900CA476F /* ModelNotas2.xcdatamodel */,
 				F15A0EDE1985EFE9002EB3FC /* ModelNotas.xcdatamodel */,
 			);
-			currentVersion = F15A0EDE1985EFE9002EB3FC /* ModelNotas.xcdatamodel */;
+			currentVersion = 0535523919BF535900CA476F /* ModelNotas2.xcdatamodel */;
 			name = ModelNotas.xcdatamodeld;
 			path = Models/DataModels/ModelNotas.xcdatamodeld;
 			sourceTree = "<group>";

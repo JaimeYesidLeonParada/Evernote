@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="v1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Location" representedClassName="Location" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <relationship name="mapSnapshot" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MapSnapshot" inverseName="location" inverseEntity="MapSnapshot" syncable="YES"/>
         <relationship name="notes" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="location" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="MapSnapshot" representedClassName="MapSnapshot" syncable="YES">
+        <attribute name="snapshotData" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="location" maxCount="1" deletionRule="No Action" destinationEntity="Location" inverseName="mapSnapshot" inverseEntity="Location" syncable="YES"/>
     </entity>
     <entity name="NamedEntity" representedClassName="NamedEntity" syncable="YES">
         <attribute name="creationDate" attributeType="Date" indexed="YES" syncable="YES"/>
@@ -25,10 +30,11 @@
         <relationship name="notes" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="photo" inverseEntity="Note" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Location" positionX="-9" positionY="108" width="128" height="105"/>
+        <element name="Location" positionX="-9" positionY="108" width="128" height="118"/>
         <element name="NamedEntity" positionX="-18" positionY="-27" width="128" height="88"/>
         <element name="Note" positionX="-146" positionY="153" width="128" height="103"/>
         <element name="NoteBook" positionX="133" positionY="216" width="128" height="58"/>
         <element name="Photo" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="MapSnapshot" positionX="0" positionY="117" width="128" height="73"/>
     </elements>
 </model>

@@ -11,12 +11,14 @@ extern const struct LocationAttributes {
 } LocationAttributes;
 
 extern const struct LocationRelationships {
+	__unsafe_unretained NSString *mapSnapshot;
 	__unsafe_unretained NSString *notes;
 } LocationRelationships;
 
 extern const struct LocationFetchedProperties {
 } LocationFetchedProperties;
 
+@class MapSnapshot;
 @class Note;
 
 
@@ -74,6 +76,13 @@ extern const struct LocationFetchedProperties {
 
 
 
+@property (nonatomic, strong) MapSnapshot *mapSnapshot;
+
+//- (BOOL)validateMapSnapshot:(id*)value_ error:(NSError**)error_;
+
+
+
+
 @property (nonatomic, strong) NSSet *notes;
 
 - (NSMutableSet*)notesSet;
@@ -118,6 +127,11 @@ extern const struct LocationFetchedProperties {
 - (void)setPrimitiveLongitudeValue:(double)value_;
 
 
+
+
+
+- (MapSnapshot*)primitiveMapSnapshot;
+- (void)setPrimitiveMapSnapshot:(MapSnapshot*)value;
 
 
 

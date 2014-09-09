@@ -8,6 +8,7 @@
 
 #import "PhotoViewController.h"
 #import "Photo.h"
+#import "UIImage+Resize.h"
 
 @import CoreImage;
 
@@ -153,9 +154,24 @@
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *img = [info objectForKey:UIImagePickerControllerOriginalImage];
+    __block UIImage *img = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    self.model.image = img;
+    CGRect screenBounds = [[UIScreen mainScreen]bounds];
+    CGFloat screenScale = [[UIScreen mainScreen]scale];
+    CGSize screenSize = CGSizeMake(screenBounds.size.width *screenScale, screenBounds.size.height *screenScale);
+    
+    
+    [self.activityView startAnimating];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        img = [img resizedImage:screenSize interpolationQuality:kCGInterpolationMedium];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.photoView.image = img;
+            [self.activityView stopAnimating];
+            self.model.image = img;
+        });
+    });
     
     [self dismissViewControllerAnimated:YES
                              completion:nil];

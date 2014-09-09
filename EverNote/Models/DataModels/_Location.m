@@ -10,6 +10,7 @@ const struct LocationAttributes LocationAttributes = {
 };
 
 const struct LocationRelationships LocationRelationships = {
+	.mapSnapshot = @"mapSnapshot",
 	.notes = @"notes",
 };
 
@@ -117,6 +118,10 @@ const struct LocationFetchedProperties LocationFetchedProperties = {
 
 
 
+
+@dynamic mapSnapshot;
+
+	
 
 @dynamic notes;
 

@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteViewController">
             <connections>
-                <outlet property="mapView" destination="1dN-tQ-Utd" id="WkU-TO-XLe"/>
+                <outlet property="mapSnapshotView" destination="7YR-X8-zVB" id="lzq-mK-xIy"/>
                 <outlet property="modificationDateView" destination="7BR-VE-wa0" id="bgb-8A-jsm"/>
                 <outlet property="nameView" destination="gEd-Lj-DhU" id="ay6-rK-m9Y"/>
                 <outlet property="photoView" destination="NCd-jR-WHB" id="ZrA-0n-S7E"/>
@@ -38,10 +38,6 @@
                     <rect key="frame" x="0.0" y="157" width="150" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="1dN-tQ-Utd">
-                    <rect key="frame" x="170" y="157" width="150" height="150"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                </mapView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="YXI-Pc-AhD">
                     <rect key="frame" x="0.0" y="320" width="320" height="248"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,6 +47,10 @@
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noSnapshot.png" id="7YR-X8-zVB">
+                    <rect key="frame" x="170" y="157" width="150" height="150"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -58,4 +58,7 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="noSnapshot.png" width="260" height="165"/>
+    </resources>
 </document>

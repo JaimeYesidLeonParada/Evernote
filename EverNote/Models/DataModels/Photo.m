@@ -13,7 +13,7 @@
 #pragma mark - Properties
 -(void) setImage:(UIImage *)image
 {
-    self.imageData = UIImagePNGRepresentation(image);
+    self.imageData = UIImageJPEGRepresentation(image, 0.9);
 }
 
 - (UIImage*)image

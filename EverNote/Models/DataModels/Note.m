@@ -42,7 +42,7 @@
 #pragma mark - Init
 -(void)awakeFromInsert
 {
-    [self awakeFromInsert];
+    //[self awakeFromInsert];
     
     CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
     

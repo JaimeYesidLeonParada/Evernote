@@ -10,7 +10,10 @@
 #import "Note.h"
 #import "Notebook.h"
 #import "Photo.h"
+#import "Location.h"
+#import "MapSnapshot.h"
 #import "PhotoViewController.h"
+#import "LocationViewController.h"
 
 @interface NoteViewController () <UITextFieldDelegate>
 
@@ -54,9 +57,14 @@
     self.textView.text = self.model.text;
     self.photoView.image = (!self.model.photo.image? [UIImage imageNamed:@"noImage.png"]: self.model.photo.image);
     
+    
+    self.mapSnapshotView.image = (!self.model.location.mapSnapshot.image? [UIImage imageNamed:@"noSnapshot.png"]:self.model.location.mapSnapshot.image);
+    self.mapSnapshotView.userInteractionEnabled = (self.model.location.mapSnapshot.image? YES:NO);
+    
+    
+    [self startObservingSnapshot];
     [self startObservingKeyboard];
     [self setupInputAccessoryView];
-    
     
     if (_newNote) {
         UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
@@ -70,6 +78,10 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self
                                                                          action:@selector(displayDetailPhoto:)];
     [self.photoView addGestureRecognizer:tap];
+    
+    UITapGestureRecognizer *snapTap = [[UITapGestureRecognizer alloc]initWithTarget:self
+                                                                             action:@selector(displayDetailLocation:)];
+    [self.mapSnapshotView addGestureRecognizer:snapTap];
     
     
     UIBarButtonItem *share = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction
@@ -93,6 +105,7 @@
        
     
     [self stopObservingKeyboard];
+    [self stopObservingSnapshot];
 }
 
 #pragma mark - Keyboard
@@ -204,6 +217,13 @@
                                          animated:YES];
 }
 
+- (void)displayDetailLocation:(UIGestureRecognizer*)sender
+{
+    LocationViewController *locVC = [[LocationViewController alloc]initWithLocation:self.model.location];
+    [self.navigationController pushViewController:locVC
+                                         animated:YES];
+}
+
 - (void)displayShareController:(id)sender
 {
     UIActivityViewController *aVC = [[UIActivityViewController alloc]initWithActivityItems:[self arrayOfItems] applicationActivities:nil];
@@ -240,5 +260,26 @@
 }
 
 
+#pragma mark - KVO
+- (void)startObservingSnapshot
+{
+    [self.model addObserver:self
+           forKeyPath:@"location.mapSnapshot.snapshotData"
+              options:NSKeyValueObservingOptionNew
+              context:NULL];
+    
+}
+
+- (void)stopObservingSnapshot
+{
+    [self.model removeObserver:self
+              forKeyPath:@"location.mapSnapshot.snapshotData"];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    self.mapSnapshotView.image = (!self.model.location.mapSnapshot.image? [UIImage imageNamed:@"noSnapshot.png"]:self.model.location.mapSnapshot.image);
+    self.mapSnapshotView.userInteractionEnabled = (self.model.location.mapSnapshot.image? YES:NO);
+}
 
 @end

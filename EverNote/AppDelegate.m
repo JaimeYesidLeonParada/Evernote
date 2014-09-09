@@ -34,6 +34,7 @@
                                                           ascending:NO],
                             [NSSortDescriptor sortDescriptorWithKey:NamedEntityAttributes.name
                                                           ascending:YES]];
+    req.fetchBatchSize = 20;
     
     NSFetchedResultsController *results = [[NSFetchedResultsController alloc] initWithFetchRequest:req
                                                                               managedObjectContext:self.model.context
